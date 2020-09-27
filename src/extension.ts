@@ -18,7 +18,8 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 }
 
-// Convert the currently selected text into a snippet, allowing you to tab through its values.
+// Convert the currently selected text into a snippet,
+// allowing you to tab through its values.
 export function selectionToSnippet() {
 	let editor: vscode.TextEditor | undefined = vscode.window.activeTextEditor;
 	if (editor !== undefined) {
